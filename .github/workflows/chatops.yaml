@@ -120,7 +120,7 @@ jobs:
           
       - name: Jekyll build with baseurl as root for netifly
         if: steps.get_status.outputs.status == 'private'
-        uses: docker://jekyll/jekyll
+        uses: docker://jekyll/jekyll:3.8.5
         with:
           args: jekyll build
      

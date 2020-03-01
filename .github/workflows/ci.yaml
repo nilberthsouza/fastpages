@@ -26,7 +26,7 @@ jobs:
         sudo chmod -R 777 .
 
     - name: Jekyll build
-      uses: docker://jekyll/jekyll
+      uses: docker://jekyll/jekyll:3.8.5
       with:
         args: jekyll build -V
         
